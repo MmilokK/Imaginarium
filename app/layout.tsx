@@ -27,12 +27,7 @@ export default function RootLayout({
     }}>
       <html lang="ru">
         <body className={cn("font-IBMPlex antialiased", IBMPlex.variable)}>
-        <SignedOut>
-          <SignInButton />
-        </SignedOut>
-        <SignedIn>
-          <UserButton />
-        </SignedIn>
+
           {children}
         </body>
       </html>
